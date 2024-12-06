@@ -5,7 +5,8 @@ public enum DataType {
     DOUBLE("double"),
     STRING("String"),
     BOOLEAN("boolean"),
-    CHAR("char");
+    CHAR("char"),
+    VOID("void");
 
     private final String typeName;
 
@@ -24,6 +25,7 @@ public enum DataType {
             case 3: return STRING;
             case 4: return BOOLEAN;
             case 5: return CHAR;
+            case 6: return VOID;
             default: throw new IllegalArgumentException("Type inconnu");
         }
     }

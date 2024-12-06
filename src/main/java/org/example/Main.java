@@ -37,12 +37,10 @@ public class Main {
             ClassHandler classHandler = new ClassHandler(className, isInterface, isAbstract);
             classes.add(classHandler);
 
-            // Gestion des attributs
-            if (!isInterface) {
+
                 System.out.print("Voulez-vous ajouter des attributs ? (y/n) : ");
                 if (scanner.nextLine().toLowerCase().equals("y")) {
                     handleAttributes(classHandler);
-                }
             }
 
             // Gestion des méthodes
@@ -138,7 +136,8 @@ public class Main {
             for (int i = 0; i < DataType.values().length; i++) {
                 System.out.print ((i + 1) + ". " + DataType.values()[i].getTypeName()+ "  ");
             }
-            System.out.print("type : ");
+            System.out.println();
+            System.out.print("=>  Type : ");
 
             int returnTypeChoice = getValidIntInput(1, 6);
             DataType returnType = DataType.fromInt(returnTypeChoice);
@@ -156,7 +155,8 @@ public class Main {
                 for (int i = 0; i < DataType.values().length - 1; i++) {
                     System.out.print((i + 1) + ". " + DataType.values()[i].getTypeName()+ " ");
                 }
-                System.out.println("type : ");
+                System.out.println();
+                System.out.print("=>  Type : ");
                 int paramTypeChoice = getValidIntInput(1, 5);
                 DataType paramType = DataType.fromInt(paramTypeChoice);
 

@@ -57,9 +57,7 @@ public class ClassHandler {
         if (attribute == null) {
             throw new IllegalArgumentException("L'attribut ne peut pas être null");
         }
-        if (isInterface) {
-            throw new UnsupportedOperationException("Une interface ne peut pas avoir d'attributs");
-        }
+
         if (hasAttributeWithName(attribute.getName())) {
             throw new IllegalArgumentException("Un attribut avec le nom '" + attribute.getName() + "' existe déjà");
         }
