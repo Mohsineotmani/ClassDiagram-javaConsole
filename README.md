@@ -9,13 +9,6 @@ Ce projet a été créé par :
 - [@SABER FATIMA](https://github.com/SABRINE2005)
 -  [@FATIMAZAHRA]()
 <br>
-## Créateurs du projet
-
-Ce projet a été créé par :
-
-- [@VotreNomGitHub](https://github.com/VotreNomGitHub)
-- [@Ami1](https://github.com/Ami1)
-- [@Ami2](https://github.com/Ami2)
 
 
 ## Installation the App
